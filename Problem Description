@@ -1,0 +1,14 @@
+The code identifies the spam e-mail using the Logistic Regression model. The spambase-train.csv and spambase-test.csv datasets are provided. This data originally
+comes from https://archive.ics.uci.edu/ml/datasets/Spambase with some modifications.
+The spambase dataset consists of continuous variables/features extracted from email data. These include the frequency of certain words
+and characters.
+logreg.m (for Octave) is also provided.
+
+Code a) The learning rate was set to 10^(-3). The code is completed by adding the gradient and calculations are updated to this methods. Logistic Regression classifier is trained using
+different learning rates {10^0; 10^(-2); 10^(-4); 10^(-6)} using spambase-train.csv and its prediction is evaluated using spambase-test.csv.
+For each learning rate, one figure with two curves, showing how the training and testing accuracy of the model (y-axis) evolve as a function of the number of iterations taken so far (x-axis). 
+
+Code b) In practice, regularization is usually employed when building Logistic Regression models to avoid overfitting. In this part L2 regularization is used. Objective function is modified to be the log-likelihood
+minus regularization term:
+Regularized logistic regression model is implemented. The performance of regularized logistic regression model using different regularization coefficients lambda i.e. lambda = 2^k where k ={-8;-6;-4;-2;0;2}.
+A plot of training and testing accuracy (two curves) where the x axis represent the value of k, i.e. {-8;-6;-4;-2;0;2} is provided. 
